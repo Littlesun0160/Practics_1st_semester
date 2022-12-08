@@ -18,5 +18,5 @@ int main()
 	Summ(massA, massB, result1);
 	std::cout << "Сумма равна " << result1 << "\n";
 
-	Mul(A, B);
+	std::cout << "Произведение равно " << Mul(A, B);
 }

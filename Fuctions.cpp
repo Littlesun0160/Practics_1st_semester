@@ -39,7 +39,7 @@ std::string Mul(std::string A, std::string B)
 	std::string MulResult = "";
 	reverse(A.begin(), A.end());
 	reverse(B.begin(), B.end());
-	int Res[1000000] = { 0 };
+	int Res[2000] = { 0 };
 	for (int i = 0; i < A.length(); i++)
 	{
 		for (int j = 0; j < B.length(); j++)
@@ -56,5 +56,6 @@ std::string Mul(std::string A, std::string B)
 		MulResult += Res[i] + '0';
 	}
 	reverse(MulResult.begin(), MulResult.end());
+	MulResult.erase(0, 1);
 	return MulResult;
 }
