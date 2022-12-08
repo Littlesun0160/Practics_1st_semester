@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.25.0) # Проверка версии CMake.
 									 # Если версия установленой программы
 									 # старее указаной, произойдёт аварийный выход.
 
-set(PROJECT_NAME test) # задать константу с именем проекта 
+set(PROJECT_NAME Practice2) # задать константу с именем проекта 
 project("${PROJECT_NAME}") # имя проекта 
 
 
