@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 #include "hpp\Functions.hpp"
-#include "hpp\Multiplication.hpp"
 
 int main()
 {
@@ -11,16 +10,13 @@ int main()
 	std::cout << "Введите число В" << "\n";
 	std::cin >> B;
 
-	const int l = 1000;
 	int massA[1000] = { 0 }, massB[1000] = { 0 };
-	Massive(A, massA, l);
-	Massive(B, massB, l); //запись каждого числа по цифрам в массив
+	Massive(A, massA);
+	Massive(B, massB); //запись каждого числа по цифрам в массив
 
 	std::string result1="";
-	Summ(massA, massB, result1, l);
-	std::cout << "Сумма равна" << result1 << "\n";
+	Summ(massA, massB, result1);
+	std::cout << "Сумма равна " << result1 << "\n";
 
-	std::string result2 = "";
-	Mul(A, B, result2);
-	std::cout << "Произведение равно" << result2 << "\n";
+	Mul(A, B);
 }
