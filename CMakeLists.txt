@@ -13,7 +13,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 include_directories("inc/")
 
 add_executable("${PROJECT_NAME}" Practice2.cpp
-							cpp/Multiplication.cpp
-							hpp/Multiplication.hpp
-							cpp/Fuctions.cpp
-							hpp/Fuctions.hpp) # добавить исполняемый файл
+						Fuctions.cpp
+						Fuctions.hpp) # добавить исполняемый файл
